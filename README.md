@@ -188,32 +188,14 @@ A focused collection of tools for examining unfamiliar links, understanding pote
 
 PhishGuard transforms an unfamiliar URL into a clear, actionable security result through five user-facing stages.
 
-```mermaid
-%%{init: {"flowchart": {"nodeSpacing": 14, "rankSpacing": 22, "curve": "basis"}}}%%
-flowchart LR
-    A(["01 · Input<br/>Submit or Detect URL"])
-    B(["02 · Validation<br/>Check and Prepare"])
-    C(["03 · Assessment<br/>Protected Analysis"])
-    D(["04 · Summary<br/>Score · Verdict · Indicators"])
-    E(["05 · Result<br/>Display · Optional History"])
-
-    A ==> B ==> C ==> D ==> E
-
-    classDef entry fill:#0B0F12,stroke:#22C55E,color:#FFFFFF,stroke-width:2px;
-    classDef validation fill:#111820,stroke:#64748B,color:#FFFFFF,stroke-width:2px;
-    classDef protected fill:#163522,stroke:#4ADE80,color:#FFFFFF,stroke-width:3px;
-    classDef summary fill:#111820,stroke:#22C55E,color:#FFFFFF,stroke-width:2px;
-    classDef result fill:#0F2418,stroke:#4ADE80,color:#FFFFFF,stroke-width:2px;
-
-    class A entry;
-    class B validation;
-    class C protected;
-    class D summary;
-    class E result;
-
-    linkStyle default stroke:#22C55E,stroke-width:2.5px;
-```
-
+<div align="center">
+  <img
+    src="screenshots/phishguard-public-workflow.svg"
+    width="100%"
+    alt="PhishGuard public URL assessment workflow"
+  />
+</div>
+<br>
 <div align="center">
 
 <sub>
