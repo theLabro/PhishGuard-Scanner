@@ -2,32 +2,36 @@
 
 <img src="screenshots/banner.png" width="100%" alt="PhishGuard — Verify Before You Trust" />
 
-<br/>
-<br/>
+<h2>PhishGuard "Verify Before You Trust"</h2>
+
+
+<p>
+A modern URL-security platform that helps users identify suspicious,
+phishing, and malicious links before opening them.
+</p>
 
 <a href="https://phishguard.qzz.io">
-  <img src="https://img.shields.io/badge/-%F0%9F%8C%90%20%20Visit%20Live%20Site-22C55E?style=for-the-badge&labelColor=0B0F12&color=22C55E" height="32" />
+  <img src="https://img.shields.io/badge/OPEN_LIVE_SITE-22C55E?style=for-the-badge&logo=googlechrome&logoColor=white" height="32" alt="Open the live PhishGuard website" />
 </a>
 
-<br/>
-<br/>
+<br/><br/>
 
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-<img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black" />
-<img src="https://img.shields.io/badge/Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white" />
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" />
-<img src="https://img.shields.io/badge/Chrome_Extension-4285F4?style=flat-square&logo=googlechrome&logoColor=white" />
+<img src="https://img.shields.io/badge/HTML5-111820?style=flat-square&logo=html5&logoColor=22C55E" alt="HTML5" />
+<img src="https://img.shields.io/badge/CSS3-111820?style=flat-square&logo=css3&logoColor=22C55E" alt="CSS3" />
+<img src="https://img.shields.io/badge/JavaScript-111820?style=flat-square&logo=javascript&logoColor=22C55E" alt="JavaScript" />
+<img src="https://img.shields.io/badge/Firebase-111820?style=flat-square&logo=firebase&logoColor=22C55E" alt="Firebase" />
+<img src="https://img.shields.io/badge/Netlify-111820?style=flat-square&logo=netlify&logoColor=22C55E" alt="Netlify" />
+<img src="https://img.shields.io/badge/Python-111820?style=flat-square&logo=python&logoColor=22C55E" alt="Python" />
+<img src="https://img.shields.io/badge/scikit--learn-111820?style=flat-square&logo=scikitlearn&logoColor=22C55E" alt="scikit-learn" />
+<img src="https://img.shields.io/badge/Chrome_Extension-111820?style=flat-square&logo=googlechrome&logoColor=22C55E" alt="Chrome Extension" />
 
-<br/>
-<br/>
+<br><br>
 
 <img src="https://img.shields.io/badge/Status-Live%20%26%20Active-22C55E?style=flat-square&labelColor=0B0F12" />
 <img src="https://img.shields.io/badge/Source%20Code-Private-ff4d4d?style=flat-square&labelColor=0B0F12" />
 <img src="https://img.shields.io/badge/ML%20Dataset-450K%20URLs-8B5CF6?style=flat-square&labelColor=0B0F12" />
 <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square&labelColor=0B0F12" />
+
 
 </div>
 
@@ -39,11 +43,20 @@
 
 ## 🛡️ &nbsp; About
 
-**PhishGuard** is a real-time cybersecurity web application that helps users determine whether a URL is safe to visit — before they click it.
+**PhishGuard** is a real-time cybersecurity web application designed to help users evaluate unfamiliar URLs before visiting them.
 
-Paste any link and get an instant security report with a **safety score**, **risk classification**, and a **detailed breakdown** of every suspicious signal detected. No installation. No technical knowledge needed.
+Submit a link to receive a clear security assessment containing a **safety score**, **risk classification**, **security indicators**, and relevant destination information.
 
-> 🔒 &nbsp; This repository is a **public showcase**. The complete source code, backend logic, Firebase configuration, ML model, and security rules are maintained in a private repository.
+The web scanner requires no installation or technical knowledge. Results are presented through four understandable verdicts:
+
+<div align="center">
+
+### 🟢 Safe &nbsp;·&nbsp; 🟡 Suspicious &nbsp;·&nbsp; 🟠 Phishing &nbsp;·&nbsp; 🔴 Malicious
+
+</div>
+
+> [!NOTE]
+> This repository is a public showcase. The implementation source, model assets, datasets, private configuration, and internal system design are maintained separately.
 
 <br/>
 
@@ -51,45 +64,32 @@ Paste any link and get an instant security report with a **safety score**, **ris
 
 <br/>
 
-## ⚡ &nbsp; Detection Engine
+## 🎯 &nbsp; Why PhishGuard?
 
-PhishGuard runs every URL through **4 independent layers** — so no single method is a point of failure.
-
-<br/>
-
-<div align="center">
-
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                                                                         │
-│   ①  BLOCKLIST          Instant lookup against known phishing domains   │
-│          │                                                              │
-│   ②  ML MODEL           450K-URL trained classifier · 21 URL features  │
-│          │                                                              │
-│   ③  HEURISTICS         TLDs · Brand spoofing · Lookalikes · Keywords   │
-│          │                                                              │
-│   ④  VIRUSTOTAL API     Cross-checked against 70+ security engines      │
-│          │                                                              │
-│          ▼                                                              │
-│     Score · Status · Threat Flags                                       │
-│                                                                         │
-└─────────────────────────────────────────────────────────────────────────┘
-```
-
-</div>
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>⚠️ The Challenge</h3>
+      <p>
+        Unsafe links are becoming increasingly difficult to recognize through appearance alone.
+        Lookalike domains, shortened URLs, misleading subdomains, and convincing brand names can
+        make harmful destinations appear legitimate.
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🛡️ The Response</h3>
+      <p>
+        PhishGuard gives users a simple way to examine unfamiliar links before opening them.
+        It translates complex security information into a clear verdict, risk level, and
+        recommended action.
+      </p>
+    </td>
+  </tr>
+</table>
 
 <br/>
 
-<div align="center">
-
-| Score | &nbsp; | Status | Risk Level |
-|:---:|:---:|:---|:---|
-| `80 – 100` | 🟢 | **Safe** | Low |
-| `58 – 79` | 🟡 | **Suspicious** | Medium |
-| `32 – 57` | 🟠 | **Phishing** | High |
-| `0 – 31` | 🔴 | **Malicious** | Critical |
-
-</div>
+PhishGuard is designed to make URL-safety information accessible to everyday users while still providing enough detail for informed decisions.
 
 <br/>
 
@@ -97,29 +97,54 @@ PhishGuard runs every URL through **4 independent layers** — so no single meth
 
 <br/>
 
-## ✨ &nbsp; Features
+## ✨ &nbsp; What PhishGuard Offers
+
+A focused collection of tools for examining unfamiliar links, understanding potential risks, and maintaining a private record of previous assessments.
 
 <br/>
 
-<div align="center">
-
-| 🔍 URL Scanner | 📊 Dashboard |
-|:---|:---|
-| Real-time phishing detection | 7-day activity line chart |
-| Safety score `0 – 100` | Threat distribution pie chart |
-| Safe / Suspicious / Phishing / Malicious | Animated live metric cards |
-| Per-flag threat breakdown | Searchable scan history table |
-| No account required | One-click CSV export |
-
-| 🧩 Browser Extension | 🔐 Authentication |
-|:---|:---|
-| Auto-scans every URL you visit | Google Sign-In + Email/Password |
-| Live badge — 🟢 🟡 🔴 | Scan history synced to Firestore |
-| Desktop threat notifications | Works offline with localStorage |
-| Liquid glass popup UI | Multi-device sync |
-| Chrome · Edge · Brave · Opera | Secure session management |
-
-</div>
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🔍 URL Scanner</h3>
+      <p>Examine unfamiliar links before deciding whether they should be trusted.</p>
+      <ul>
+        <li>Clear safety score and risk level</li>
+        <li>Four clearly separated security verdicts</li>
+        <li>Security indicators and redirect information</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h3>📊 Security Dashboard</h3>
+      <p>Review personal scanning activity through a clean visual dashboard.</p>
+      <ul>
+        <li>Activity and threat-distribution charts</li>
+        <li>Searchable private scan history</li>
+        <li>Downloadable CSV reports</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🧩 Browser Extension</h3>
+      <p>Access URL-safety information directly while browsing the web.</p>
+      <ul>
+        <li>Compact dark-themed interface</li>
+        <li>Color-coded safety indicators</li>
+        <li>Support for Chromium-based browsers</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🔐 Secure User Access</h3>
+      <p>Sign in to access personalized features and privately saved information.</p>
+      <ul>
+        <li>Google and email authentication</li>
+        <li>Private synchronized scan records</li>
+        <li>Profile and session controls</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 <br/>
 
@@ -127,7 +152,7 @@ PhishGuard runs every URL through **4 independent layers** — so no single meth
 
 <br/>
 
-## 📸 &nbsp; Screenshots
+## 📸 &nbsp; Preview
 
 <br/>
 
@@ -151,72 +176,98 @@ PhishGuard runs every URL through **4 independent layers** — so no single meth
 #### Sign In
 <img src="screenshots/login.png" width="880" />
 
-<br/><br/>
-
 </div>
 
 <br/>
 
 ---
 
-<br/>
 
-## 🏗️ &nbsp; Architecture
+## 🔄 &nbsp; How PhishGuard Works
 
-<br/>
+PhishGuard transforms an unfamiliar URL into a clear, actionable security result through five user-facing stages.
 
+```mermaid
+%%{init: {"flowchart": {"nodeSpacing": 14, "rankSpacing": 22, "curve": "basis"}}}%%
+flowchart LR
+    A(["01 · Input<br/>Submit or Detect URL"])
+    B(["02 · Validation<br/>Check and Prepare"])
+    C(["03 · Assessment<br/>Protected Analysis"])
+    D(["04 · Summary<br/>Score · Verdict · Indicators"])
+    E(["05 · Result<br/>Display · Optional History"])
+
+    A ==> B ==> C ==> D ==> E
+
+    classDef entry fill:#0B0F12,stroke:#22C55E,color:#FFFFFF,stroke-width:2px;
+    classDef validation fill:#111820,stroke:#64748B,color:#FFFFFF,stroke-width:2px;
+    classDef protected fill:#163522,stroke:#4ADE80,color:#FFFFFF,stroke-width:3px;
+    classDef summary fill:#111820,stroke:#22C55E,color:#FFFFFF,stroke-width:2px;
+    classDef result fill:#0F2418,stroke:#4ADE80,color:#FFFFFF,stroke-width:2px;
+
+    class A entry;
+    class B validation;
+    class C protected;
+    class D summary;
+    class E result;
+
+    linkStyle default stroke:#22C55E,stroke-width:2.5px;
 ```
-╔══════════════════════════════════════════════════════════════════════╗
-║                          User Interfaces                            ║
-║                                                                      ║
-║    ┌───────────────────────────┐   ┌────────────────────────────┐   ║
-║    │       Web App  (SPA)      │   │     Browser Extension      │   ║
-║    │    phishguard.qzz.io      │   │     Chrome Manifest V3     │   ║
-║    │    HTML · CSS · JS        │   │     Chrome · Edge · Brave  │   ║
-║    └──────────────┬────────────┘   └───────────────┬────────────┘   ║
-╚══════════════════╪═══════════════════════════════╪═════════════════╝
-                   └─────────────────┬─────────────┘
-                                     ▼
-╔══════════════════════════════════════════════════════════════════════╗
-║              Netlify Serverless Function  ·  /api/scan              ║
-║                                                                      ║
-║    [Blocklist] → [ML Model] → [Heuristics] → [VirusTotal API]       ║
-║                                                                      ║
-║              score  ·  status  ·  flags  ·  domain info             ║
-╚══════════════════════════╤═══════════════════════════════════════════╝
-                           │
-             ┌─────────────┴──────────────────┐
-             ▼                                ▼
-  ┌──────────────────────┐       ┌───────────────────────────┐
-  │    Firebase Auth      │       │      Cloud Firestore       │
-  │    Google · Email     │       │    users/{uid}/scans       │
-  └──────────────────────┘       └───────────────────────────┘
-```
-
-<br/>
-
----
-
-<br/>
-
-## 🛠️ &nbsp; Tech Stack
-
-<br/>
 
 <div align="center">
 
-| Layer | Technology | Purpose |
-|:------|:-----------|:--------|
-| **Frontend** | HTML5 · CSS3 · Vanilla JS (ES6+) | SPA, glassmorphism UI, Canvas charts |
-| **Routing** | History API | Clean URLs, back-button support |
-| **Serverless** | Netlify Functions | Scan API endpoint |
-| **Threat Intel** | VirusTotal API | 70+ AV engine cross-validation |
-| **Auth** | Firebase Authentication | Google Sign-In & Email/Password |
-| **Database** | Cloud Firestore | Scan history, user profiles |
-| **ML Pipeline** | Python · scikit-learn · joblib | Trained on 450K URLs, 21 features |
-| **Extension** | Chrome Manifest V3 | Background monitoring, alerts |
+<sub>
+A URL is submitted manually or detected through the extension, checked for valid input, privately assessed, converted into an understandable security summary, and displayed to the user. Signed-in users may also save the result to their private scan history.
+</sub>
 
 </div>
+
+<br/>
+
+> [!NOTE]
+> The **Protected Analysis** stage represents PhishGuard’s private security process. Its models, detection rules, feature engineering, thresholds, external services, and infrastructure are intentionally not disclosed.
+<br/>
+
+### Process Summary
+
+1. A URL is submitted through the website or browser extension.
+2. The input is checked and prepared for assessment.
+3. PhishGuard performs its protected security analysis.
+4. A safety score, verdict, security indicators, and destination details are generated.
+5. The result is displayed using one of four clear classifications.
+6. Signed-in users can privately save the assessment and review it through their dashboard.
+
+> [!NOTE]
+> The **Protected Security Assessment** represents PhishGuard’s private detection logic. Models, feature engineering, rules, thresholds, service providers, and infrastructure details are intentionally not disclosed.
+<br/>
+
+---
+
+<br/>
+
+## 🧭 &nbsp; How to Use
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>01 · Paste a URL</h3>
+      <p>Copy an unfamiliar or suspicious link and paste it into the URL Scanner.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>02 · Start the Assessment</h3>
+      <p>Select <strong>Scan URL</strong> to begin examining the submitted link.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>03 · Review the Result</h3>
+      <p>Check the verdict, safety score, risk level, destination details, and displayed security indicators.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>04 · Decide Safely</h3>
+      <p>Continue only when the result and destination are trustworthy. Signed-in users can review the scan later.</p>
+    </td>
+  </tr>
+</table>
 
 <br/>
 
@@ -224,29 +275,59 @@ PhishGuard runs every URL through **4 independent layers** — so no single meth
 
 <br/>
 
-## 🗺️ &nbsp; Roadmap
+## 🔎 &nbsp; What a Scan Shows
+
+Each assessment is designed to explain both the overall verdict and the most relevant information behind it.
 
 <br/>
 
-**Shipped ✅**
+| Information | What It Communicates |
+|:---|:---|
+| **Safety Score** | A simple `0–100` representation of the assessed URL’s overall safety. |
+| **Threat Verdict** | Whether the URL is classified as Safe, Suspicious, Phishing, or Malicious. |
+| **Risk Level** | A plain-language indication of the level of caution required. |
+| **Reputation** | Whether the destination has known or independently supported threat evidence. |
+| **Certificate Status** | Whether the submitted destination provides a valid secure connection. |
+| **Domain Information** | The destination domain associated with the submitted URL. |
+| **Redirect Details** | Whether the submitted link leads through other destinations before reaching its final location. |
+| **Security Indicators** | Important observations that may have influenced the displayed assessment. |
 
-- [x] 4-layer URL detection engine
-- [x] ML model trained on 450,000 URLs
-- [x] Real-time safety scanner
-- [x] Interactive dashboard with charts
-- [x] Firebase auth & Firestore sync
-- [x] CSV export
-- [x] Browser extension (Manifest V3)
+<br/>
 
-**Coming Soon 🚧**
+---
 
-- [ ] Email phishing scanner
-- [ ] QR code safety checker
-- [ ] SSL certificate deep inspection
-- [ ] WHOIS & domain age analysis
-- [ ] Password leak detection
-- [ ] Threat intelligence feed
-- [ ] Mobile app
+<br/>
+
+## 🚦 &nbsp; Understanding the Verdict
+
+| Verdict | Meaning | Recommended Action |
+|:---:|:---|:---|
+| 🟢 **Safe** | No significant risk indicators were identified during the assessment. | Continue normally while confirming that the destination is expected. |
+| 🟡 **Suspicious** | The URL contains unusual characteristics or incomplete trust signals. | Verify the domain and source before continuing. |
+| 🟠 **Phishing** | The URL shows strong signs of impersonation, deception, or credential theft. | Do not enter personal information or account credentials. |
+| 🔴 **Malicious** | The URL is associated with confirmed or independently supported threat evidence. | Avoid the destination and close the page immediately. |
+
+<br/>
+
+> [!WARNING]
+> PhishGuard is a decision-support tool. No automated assessment can guarantee that a website is completely safe. Unexpected links, downloads, and requests for personal information should always be verified independently.
+
+<br/>
+
+---
+
+<br/>
+
+## 🗺️ &nbsp; Next Steps
+
+Development may continue in the following areas:
+
+- [ ] Email phishing assessment
+- [ ] QR-code link inspection
+- [ ] Expanded domain intelligence
+- [ ] Improved reporting tools
+- [ ] Enhanced mobile accessibility
+- [ ] Additional threat-intelligence sources
 
 <br/>
 
@@ -256,7 +337,11 @@ PhishGuard runs every URL through **4 independent layers** — so no single meth
 
 ## 👤 &nbsp; Author
 
-Built by **Rishipratim Karmakar** · Open to discussions, collaboration, and feedback.
+<h3>Rishipratim Karmakar</h3>
+
+PhishGuard was developed as an academic cybersecurity project focused on making URL-safety information understandable and accessible.
+
+Feedback and discussions about the publicly available application are welcome.
 
 <br/>
 
@@ -266,14 +351,16 @@ Built by **Rishipratim Karmakar** · Open to discussions, collaboration, and fee
 
 <div align="center">
 
+<h3>Ready to verify a link?</h3>
+
+<p>Open PhishGuard and examine an unfamiliar URL before deciding whether to trust it.</p>
+
 <a href="https://phishguard.qzz.io">
-  <img src="https://img.shields.io/badge/-%F0%9F%8C%90%20%20Try%20PhishGuard%20Live%20%E2%80%94%20phishguard.qzz.io-22C55E?style=for-the-badge&labelColor=0B0F12&color=22C55E" height="36" />
+  <img src="https://img.shields.io/badge/OPEN_PHISHGUARD-phishguard.qzz.io-22C55E?style=for-the-badge&labelColor=0B0F12" height="36" alt="Open PhishGuard" />
 </a>
 
 <br/><br/>
 
-<sub>⭐ &nbsp; If you found this useful, consider starring the repository</sub>
-
-<br/>
+<sub>⭐ If you find the project interesting, consider starring the repository.</sub>
 
 </div>
